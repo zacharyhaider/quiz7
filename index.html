@@ -1,0 +1,30 @@
+<!doctype=html>
+<html>
+    <head>
+    <title>
+Competition Estimator</title>
+
+    </head>
+    <body>
+        <h2>Competition Estimator</h2>
+        <p>Given number of students applying and count of open positions, display students per position </p>
+        <p>Enter the number of students:
+            <input id="students" type="number" value="0">
+        </p>
+
+         <p>Enter the number of positions:
+             <input id="positions" type="number" value="0">
+         </p>
+
+         <button id="calculate">Calculate</button>
+
+         <p id="result"></p>
+         <script>
+        document.getElementById("calculate").addEventListener("click",     function () {
+      const studentNum = document.getElementById("students").value
+      const positionNum = parseInt(document.getElementById("positions").value)
+      const answer = studentNum/positionNum
+      document.getElementById("result").innerHTML = "results:"+answer
+    })</script>
+    </body>
+</html>
